@@ -1,0 +1,45 @@
+name: Feature request
+description: Propose an improvement for a repository that accepts public feature requests.
+title: "[Feature]: "
+labels: []
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or product
+      description: Which Craniumtek repository or product would this improve?
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Describe the user or engineering problem before proposing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: What should become possible or easier?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional approaches, workarounds, or trade-offs.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Who benefits and how would success be measured?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and pull requests for similar proposals.
+          required: true
+        - label: This request does not include confidential information or production credentials.
+          required: true
